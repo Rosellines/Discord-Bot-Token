@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Discord Auth Header Reader",
+  "version": "1.1",
+  "author": "BEN - SHARE IT HUB",
+  "description": "Ambil Authorization Header dari Discord API v9",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://discord.com/api/v9/quests/@me*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Lihat Authorization"
+  }
+}
